@@ -1,0 +1,114 @@
+<body class="bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 min-h-screen">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <nav class="flex justify-between items-center p-6 bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="flex items-center space-x-4">
+      <img src="https://avatars.githubusercontent.com/u/184134105?v=4" alt="Logo" class="h-12 rounded-full" />
+      <span class="font-bold text-xl">Dineshtarun G</span>
+    </div>
+    <ul class="hidden md:flex space-x-8 text-gray-300">
+      <li><a href="#about" class="hover:text-white">About</a></li>
+      <li><a href="#skills" class="hover:text-white">Skills</a></li>
+      <li><a href="#projects" class="hover:text-white">Projects</a></li>
+      <li><a href="#contact" class="hover:text-white">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20">
+    <img src="https://avatars.githubusercontent.com/u/184134105?v=4" alt="Profile Photo"
+      class="w-48 h-48 rounded-full shadow-lg mb-8 md:mb-0 md:mr-12 object-cover" />
+    <div class="max-w-xl text-center md:text-left">
+      <h1 class="text-4xl font-extrabold mb-4 text-gray-900">ನಮಸ್ಕಾರ, I'm Dineshtarun G</h1>
+      <p class="text-lg text-gray-700 mb-6">Doing my 3rd year BCA cloud computing in Kristujayanti college and I'm
+        interested in web-dev and AI.</p>
+      <a href="#contact"
+        class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded shadow">Get in
+        Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="bg-white py-16 px-6 md:px-20 max-w-5xl mx-auto rounded-lg shadow-lg my-8">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900">About Me</h2>
+    <p class="text-gray-700 max-w-3xl">"I'm a Front-End Developer passionate about bringing digital visions to life! 🎨
+      With a strong command of Angular, Tailwind CSS, and responsive design, I specialize in building beautiful,
+      functional, and user-friendly websites and applications. While development can sometimes throw a curveball (we all
+      have those days! 😅), I thrive on the challenge of transforming ideas into exceptional web experiences."
+    </p>
+  </section>
+
+  <section id="skills" class="bg-white py-16 px-6 md:px-20 max-w-5xl mx-auto rounded-lg shadow-lg my-8">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900">Skills 🤹‍♂️</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center p-6 bg-white rounded shadow">
+        <h3 class="font-semibold mb-2">Angular 🦋</h3>
+        <p class="text-gray-600">Building dynamic single-page apps</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded shadow">
+        <h3 class="font-semibold mb-2">Tailwind CSS 🦄</h3>
+        <p class="text-gray-600">Rapid UI development</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded shadow">
+        <h3 class="font-semibold mb-2">JavaScript 🧠</h3>
+        <p class="text-gray-600">Making websites interactive and alive🌟</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded shadow">
+        <h3 class="font-semibold mb-2">Python 🐍</h3>
+        <p class="text-gray-600">Have a good experience in Python</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-white py-16 px-6 md:px-20 max-w-5xl mx-auto rounded-lg shadow-lg my-8">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="rounded shadow overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRzrPKT1vQQ4m9ed0C0YxPAQsao2qP6YTcBK9kRg4bzz-lO642k4vgddWmkvNGa9RUS0&usqp=CAU"
+          alt="Project 1" class="w-full object-cover h-48" />
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">Cake Store Management 🍰</h3>
+          <p class="text-gray-600">The Cake Store Management System 🎂 is a sophisticated full-stack web application 💻
+            that I developed solely using AI tools 🤖 as an experimental project 🔬</p>
+          <a href="https://github.com/tarun08-code/cake-store-using-curser"
+            class="inline-block mt-3 text-indigo-600 hover:underline">Show project</a>
+        </div>
+      </div>
+      <div class="rounded shadow overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img
+          src="https://cdn.vectorstock.com/i/1000v/03/11/people-play-game-of-rock-paper-scissors-players-vector-56120311.jpg"
+          alt="Project 2" class="w-full object-cover h-48" />
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">Rock-Paper-Scissors 📃</h3>
+          <p class="text-gray-600">The Rock-Paper-Scissors game ✊📄✂️ is an engaging and interactive application 🕹️
+            developed using JavaScript 💻 and HTML 🌐</p>
+          <a href="https://github.com/tarun08-code/rock-paper-scissor-game-project-js"
+            class="inline-block mt-3 text-indigo-600 hover:underline">Show project</a>
+        </div>
+      </div>
+      <div class="rounded shadow overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img src="https://cdn.pixabay.com/photo/2023/12/07/08/34/couple-8435096_1280.png" alt="Project 3"
+          class="w-full object-cover h-48" />
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">Date project ❤️</h3>
+          <p class="text-gray-600">The Date Project 💌 is an innovative application designed to help you confidently
+            invite your crush 🥰 on a date 🌹</p>
+          <a href="https://github.com/tarun08-code/Date-project-1"
+            class="inline-block mt-3 text-indigo-600 hover:underline">Show project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact"
+    class="bg-indigo-800 text-white py-16 px-6 md:px-20 max-w-5xl mx-auto text-center rounded-lg shadow-lg my-8">
+    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+    <p class="mb-6 max-w-xl mx-auto">Feel free to reach out for projects, collaborations, or just a friendly chat.</p>
+    <a href="mailto:guymasked03@gmail.com"
+      class="inline-block bg-white text-indigo-800 font-semibold px-6 py-3 rounded hover:bg-gray-200 transition">Email
+      Me</a>
+
+  </section>
+</body>
