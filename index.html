@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KJC college matrix template </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>23BF2T431</h1>
+      <h2>23BF2T431: KJC college matrix template </h2>
+      <div class="course-info">
+        <span><strong>Credits:</strong> 4</span>
+        <span><strong>Hours:</strong> 60</span>
+      </div>
+    </header>
+
+    <!-- 1. Course Description (Fixed Table) -->
+    <section class="section" id="course-description">
+      <h3>1. Course Description</h3>
+      <table class="course-description-table">
+        <tr>
+          <td>Semester: III</td>
+          <td>Course Title: International Financial Accounting and Reporting II</td>
+        </tr>
+        <tr>
+          <td>Course Code: 23BF2T431</td>
+          <td>Course Type: DSC</td>
+        </tr>
+        <tr>
+          <td>Course Credits: 4</td>
+          <td>Intended Level: Diploma</td>
+        </tr>
+        <tr>
+          <td>Total hours</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Cross cutting issue(s) addressed</td>
+          <td>
+            <input type="text" class="skill-input" value="" placeholder="Enter Text here">
+          </td>
+        </tr>
+        <tr>
+          <td>Need(s) catered by the course</td>
+          <td>
+            <input type="text" class="skill-input" value="" placeholder="Enter Text here">
+          </td>
+        </tr>
+        <tr>
+          <td>Course Offered to</td>
+          <td>
+            <input type="text" class="skill-input" value="" placeholder="Enter Text here">
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 2. Course Objective (Dynamic Form) -->
+    <section class="section" id="course-objective">
+      <h3>2. Course Objective</h3>
+      <div class="form-container">
+        <div id="objectives-container">
+          <div class="objective-item">
+            <textarea placeholder="Enter course objective..." class="objective-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeObjective(this)">Remove</button>
+          </div>
+          <div class="objective-item">
+            <textarea placeholder="Enter course objective..." class="objective-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeObjective(this)">Remove</button>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="add-btn" onclick="addObjective()">Add Row</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Course Outcomes (Dynamic Form) -->
+    <section class="section" id="course-outcomes">
+      <h3>3. Course Outcomes</h3>
+      <p>After the successful completion of the course, the student will be able to:</p>
+      <div class="form-container">
+        <div id="outcomes-container">
+          <div class="outcome-item">
+            <label>CO1:</label>
+            <textarea placeholder="Enter course outcome..." class="outcome-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeOutcome(this)">Remove</button>
+          </div>
+          <div class="outcome-item">
+            <label>CO2:</label>
+            <textarea placeholder="Enter course outcome..." class="outcome-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeOutcome(this)">Remove</button>
+          </div>
+          <div class="outcome-item">
+            <label>CO3:</label>
+            <textarea placeholder="Enter course outcome..." class="outcome-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeOutcome(this)">Remove</button>
+          </div>
+          <div class="outcome-item">
+            <label>CO4:</label>
+            <textarea placeholder="Enter course outcome..." class="outcome-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeOutcome(this)">Remove</button>
+          </div>
+          <div class="outcome-item">
+            <label>CO5:</label>
+            <textarea placeholder="Enter course outcome..." class="outcome-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removeOutcome(this)">Remove</button>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="add-btn" onclick="addOutcome()">Add Row</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Course Articulation Matrix (Table with Checkboxes) -->
+    <section class="section" id="course-articulation">
+      <h3>4. Course Articulation Matrix</h3>
+      <table class="articulation-matrix">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>PO1</th>
+            <th>PO2</th>
+            <th>Mapping<br>PO3</th>
+            <th>PO4</th>
+            <th>PO5</th>
+            <th>PO6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CO1</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>CO2</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>CO3</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>CO4</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>CO5</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!----------------------------------------------------------------------->
+
+
+    <!-- 5. Course Content (Dynamic Form) -->
+    <section class="section" id="course-content">
+      <h3>5. Course Content</h3>
+      <div class="course-content-header">
+        <table class="content-header-table">
+          <thead>
+            <tr>
+
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="form-container">
+        <div id="content-container">
+          <div class="content-item">
+            <div class="content-unit">
+              <label>Unit 1:</label>
+              <input type="text" placeholder="Enter unit title..." class="unit-title-input" value="">
+            </div>
+            <div class="content-details">
+              <textarea placeholder="Enter unit content..." class="content-input"></textarea>
+            </div>
+            <div class="content-hours">
+              <label>Hours:</label>
+              <input type="number" placeholder="Hours" class="hours-input" value="" min="1">
+            </div>
+            <button type="button" class="remove-btn" onclick="removeContent(this)">Remove</button>
+          </div>
+          <div class="content-item">
+            <div class="content-unit">
+              <label>Unit 2:</label>
+              <input type="text" placeholder="Enter unit title..." class="unit-title-input" value="">
+            </div>
+            <div class="content-details">
+              <textarea placeholder="Enter unit content..." class="content-input"></textarea>
+            </div>
+            <div class="content-hours">
+              <label>Hours:</label>
+              <input type="number" placeholder="Hours" class="hours-input" value="" min="1">
+            </div>
+            <button type="button" class="remove-btn" onclick="removeContent(this)">Remove</button>
+          </div>
+          <div class="content-item">
+            <div class="content-unit">
+              <label>Unit 3:</label>
+              <input type="text" placeholder="Enter unit title..." class="unit-title-input" value="">
+            </div>
+            <div class="content-details">
+              <textarea placeholder="Enter unit content..." class="content-input"></textarea>
+            </div>
+            <div class="content-hours">
+              <label>Hours:</label>
+              <input type="number" placeholder="Hours" class="hours-input" value="" min="1">
+            </div>
+            <button type="button" class="remove-btn" onclick="removeContent(this)">Remove</button>
+          </div>
+          <div class="content-item">
+            <div class="content-unit">
+              <label>Unit 4:</label>
+              <input type="text" placeholder="Enter unit title..." class="unit-title-input" value="">
+            </div>
+            <div class="content-details">
+              <textarea placeholder="Enter unit content..." class="content-input"></textarea>
+            </div>
+            <div class="content-hours">
+              <label>Hours:</label>
+              <input type="number" placeholder="Hours" class="hours-input" value="" min="1">
+            </div>
+            <button type="button" class="remove-btn" onclick="removeContent(this)">Remove</button>
+          </div>
+          <div class="content-item">
+            <div class="content-unit">
+              <label>Unit 5:</label>
+              <input type="text" placeholder="Enter unit title..." class="unit-title-input" value="">
+            </div>
+            <div class="content-details">
+              <textarea placeholder="Enter unit content..." class="content-input"></textarea>
+            </div>
+            <div class="content-hours">
+              <label>Hours:</label>
+              <input type="number" placeholder="Hours" class="hours-input" value="" min="1">
+            </div>
+            <button type="button" class="remove-btn" onclick="removeContent(this)">Remove</button>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="add-btn" onclick="addContent()">Add Unit</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!----------------------------------------------------------------------->
+
+
+    <!-- 6. Resources -->
+    <section class="section" id="resources">
+      <h3>6. Resources</h3>
+
+      <!-- Dynamic Resource Sections -->
+      <div id="resources-container">
+        <!-- 6a. Reference Books -->
+        <div class="resource-subsection">
+          <h4>a) Reference Books</h4>
+          <div class="form-container">
+            <div id="reference-books-container">
+              <div class="resource-item">
+                <textarea placeholder="Enter reference book..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+              <div class="resource-item">
+                <textarea placeholder="Enter reference book..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+              <div class="resource-item">
+                <textarea placeholder="Enter reference book..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="add-btn" onclick="addResourceItem('reference-books-container')">Add
+                Book</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6b. Suggested Policies / Reports / Articles / Case Studies -->
+        <div class="resource-subsection">
+          <h4>b) Suggested Policies / Reports / Articles / Case Studies</h4>
+          <div class="form-container">
+            <div id="policies-reports-container">
+              <div class="resource-item">
+                <textarea placeholder="Enter policy/report/article..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+              <div class="resource-item">
+                <textarea placeholder="Enter policy/report/article..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="add-btn" onclick="addResourceItem('policies-reports-container')">Add
+                Item</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6c. Online Resources -->
+        <div class="resource-subsection">
+          <h4>c) Online Resources</h4>
+          <div class="form-container">
+            <div id="online-resources-container">
+              <div class="resource-item">
+                <textarea placeholder="Enter online resource..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="add-btn" onclick="addResourceItem('online-resources-container')">Add
+                Resource</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6d. In-house Electronic Resources and Databases -->
+        <div class="resource-subsection">
+          <h4>d) In-house Electronic Resources and Databases</h4>
+          <div class="form-container">
+            <div id="electronic-resources-container">
+              <div class="resource-item">
+                <textarea placeholder="Enter electronic resource..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+              <div class="resource-item">
+                <textarea placeholder="Enter electronic resource..." class="resource-input"></textarea>
+                <button type="button" class="remove-btn" onclick="removeResourceItem(this)">Remove</button>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="add-btn" onclick="addResourceItem('electronic-resources-container')">Add
+                Database</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add New Resource Section Button -->
+      <div class="form-buttons" style="margin-top: 20px;">
+        <button type="button" class="add-btn" onclick="addResourceSection()">Add New Resource Section</button>
+      </div>
+    </section>
+
+    <!-- 7. Pedagogy -->
+    <section class="section" id="pedagogy">
+      <h3>7. Pedagogy</h3>
+      <div class="form-container">
+        <div id="pedagogy-container">
+          <div class="pedagogy-item">
+            <textarea placeholder="Enter pedagogy method..." class="pedagogy-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removePedagogyItem(this)">Remove</button>
+          </div>
+          <div class="pedagogy-item">
+            <textarea placeholder="Enter pedagogy method..." class="pedagogy-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removePedagogyItem(this)">Remove</button>
+          </div>
+          <div class="pedagogy-item">
+            <textarea placeholder="Enter pedagogy method..." class="pedagogy-input"></textarea>
+            <button type="button" class="remove-btn" onclick="removePedagogyItem(this)">Remove</button>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="add-btn" onclick="addPedagogyItem()">Add Method</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Skill Set Identification Matrix -->
+    <section class="section" id="skill-matrix">
+      <h3>8. Skill Set Identification Matrix</h3>
+      <table class="skill-matrix">
+        <thead>
+          <tr>
+            <th>COs</th>
+            <th>Level of Bloom's Taxonomy</th>
+            <th>Expected Skill Outcome(s)</th>
+            <th>Assessment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CO1</td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter Bloom's level">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter skill outcome">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter assessment method">
+            </td>
+          </tr>
+          <tr>
+            <td>CO2</td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter Bloom's level">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter skill outcome">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter assessment method">
+            </td>
+          </tr>
+          <tr>
+            <td>CO3</td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter Bloom's level">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter skill outcome">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter assessment method">
+            </td>
+          </tr>
+          <tr>
+            <td>CO4</td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter Bloom's level">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter skill outcome">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter assessment method">
+            </td>
+          </tr>
+          <tr>
+            <td>CO5</td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter Bloom's level">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter skill outcome">
+            </td>
+            <td>
+              <input type="text" class="skill-input" value="" placeholder="Enter assessment method">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--------------------------------------------------------------->
+
+    <!-- 9. Course Assessment Plan -->
+    <section class="section" id="assessment-plan">
+      <h3>9. Course Assessment Plan</h3>
+
+      <!-- a. Weightage of Marks in Formative and Summative Assessments -->
+      <div class="assessment-subsection">
+        <h4>a. Weightage of Marks in Formative and Summative Assessments</h4>
+        <table class="assessment-weightage-table">
+          <thead>
+            <tr>
+              <th>COs</th>
+              <th>Formative Assessment</th>
+              <th>Summative Assessment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CO1</td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+            </tr>
+            <tr>
+              <td>CO2</td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+            </tr>
+            <tr>
+              <td>CO3</td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" placeholder="0" min="0"></td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+            </tr>
+            <tr>
+              <td>CO4</td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+            </tr>
+            <tr>
+              <td>CO5</td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+              <td><input type="number" class="marks-input" value="" placeholder="0" min="0"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- b. Question Paper Pattern -->
+      <div class="assessment-subsection">
+        <h4>b. Question Paper Pattern</h4>
+        <div class="question-pattern-container">
+          <div class="pattern-item">
+            <h5>Midterm Examination I :</h5>
+
+            <textarea class="pattern-input"
+              placeholder="Enter additional details for Midterm Examination I..."></textarea>
+          </div>
+
+          <div class="pattern-item">
+            <h5>Midterm Examination II :</h5>
+
+            <textarea class="pattern-input"
+              placeholder="Enter additional details for Midterm Examination II..."></textarea>
+          </div>
+
+          <div class="pattern-item">
+            <h5>End Semester Examination</h5>
+
+            <textarea class="pattern-input"
+              placeholder="Enter additional details for End Semester Examination..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- c. Question Paper Blue Print -->
+      <div class="assessment-subsection">
+        <h4>c. Question Paper Blue Print</h4>
+        <table class="blueprint-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Units</th>
+              <th rowspan="2">Hours Allotted in the Syllabus</th>
+              <th rowspan="2">COs Addressed</th>
+              <th colspan="6">No. of Questions & Distribution of Marks</th>
+
+            </tr>
+            <tr>
+              <th>Section A</th>
+              <th>Total Marks</th>
+              <th>Section B</th>
+              <th>Total Marks</th>
+              <th>Section C</th>
+              <th>Total Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><input type="number" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><input type="number" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><input type="number" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><input type="number" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><input type="number" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value="" min="0"></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+              <td><input type="text" class="blueprint-input" value=""></td>
+
+            </tr>
+            <tr class="taxonomy-row">
+              <td colspan="3"><strong>Bloom's Taxonomy Level(s) Used</strong></td>
+
+
+              <td colspan="2"><strong> <textarea class="pattern-input" placeholder=""></textarea></strong></td>
+              <td colspan="2"><strong> <textarea class="pattern-input" placeholder=""></textarea></strong></td>
+
+              <td colspan="2"><strong> <textarea class="pattern-input" placeholder="."></textarea></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- d. Mapping COs using Rubrics -->
+      <div class="assessment-subsection">
+        <h4>d. Mapping COs using Rubrics</h4>
+        <table class="rubrics-mapping-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Question Number</th>
+              <th colspan="5">MTE I</th>
+              <th colspan="5">Mapping MTE II</th>
+              <th colspan="5">ESE</th>
+            </tr>
+            <tr>
+              <th>CO1</th>
+              <th>CO2</th>
+              <th>CO3</th>
+              <th>CO4</th>
+              <th>CO5</th>
+              <th>CO1</th>
+              <th>CO2</th>
+              <th>CO3</th>
+              <th>CO4</th>
+              <th>CO5</th>
+              <th>CO1</th>
+              <th>CO2</th>
+              <th>CO3</th>
+              <th>CO4</th>
+              <th>CO5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Q01</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q02</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q03</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q04</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q05</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q06</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q07</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q08</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q09</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q10</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q11</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q12</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q13</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q14</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q15</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q16</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q17</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q18</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q19</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Q20</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="form-buttons">
+          <button type="button" class="add-btn" onclick="addRubricsRow()">Add Question Row</button>
+        </div>
+      </div>
+
+      <!-- e. Mapping FA Components using Rubrics -->
+      <div class="assessment-subsection">
+        <h4>e. Mapping FA Components using Rubrics</h4>
+        <table class="fa-components-table">
+          <thead>
+            <tr>
+              <th rowspan="2">FA Component</th>
+              <th colspan="5">Mapping</th>
+            </tr>
+            <tr>
+              <th>CO1</th>
+              <th>CO2</th>
+              <th>CO3</th>
+              <th>CO4</th>
+              <th>CO5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Assignment</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Class Participation</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>MTE I</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>MTE II</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Approval Section -->
+      <div class="assessment-subsection">
+        <table class="approval-table">
+          <thead>
+            <tr>
+              <th>Prepared and Verified by Course Teacher</th>
+              <th colspan="2">APPROVED BY</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>HoD / Programme Coordinator</th>
+              <th>Dean</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="signature-cell">
+                <div class="signature-space"></div>
+                <div class="signature-name">
+                  <input type="text" class="name-input" placeholder="Signature.." value="">
+                </div>
+              </td>
+              <td class="signature-cell">
+                <div class="signature-space"></div>
+                <div class="signature-name">
+                  <input type="text" class="name-input" placeholder="Signature.." value="">
+                </div>
+              </td>
+              <td class="signature-cell">
+                <div class="signature-space"></div>
+                <div class="signature-name">
+                  <input type="text" class="name-input" placeholder="Signature..">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- Fixed Bottom Pagination -->
+  <div class="pagination-fixed">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination-list">
+        <li class="page-item">
+          <button class="page-link" onclick="previousPage()" aria-label="Previous">
+            <svg class="page-arrow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </li>
+        <li class="page-item">
+          <button class="page-link page-number active" onclick="goToPage(1)">1</button>
+        </li>
+        <li class="page-item">
+          <button class="page-link page-number" onclick="goToPage(2)">2</button>
+        </li>
+        <li class="page-item">
+          <button class="page-link page-number" onclick="goToPage(3)">3</button>
+        </li>
+        <li class="page-item">
+          <button class="page-link page-number" onclick="goToPage(4)">4</button>
+        </li>
+        <li class="page-item">
+          <button class="page-link page-number" onclick="goToPage(5)">5</button>
+        </li>
+        <li class="page-item">
+          <button class="page-link" onclick="nextPage()" aria-label="Next">
+            <svg class="page-arrow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Scroll Down Button -->
+  <div class="scroll-down-btn" onclick="scrollToBottom()" title="Scroll to Bottom">
+    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+        d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

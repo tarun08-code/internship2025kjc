@@ -1,0 +1,1272 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.course-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.1rem;
+}
+
+.course-info span {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* Section Styles */
+.section {
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+}
+
+/* Course Description Table */
+.course-description-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.course-description-table td {
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  vertical-align: top;
+}
+
+.course-description-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.course-description-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.course-description-table td:first-child {
+  background-color: #eff6ff;
+  font-weight: 600;
+  color: #1e40af;
+  width: 30%;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Objective Items */
+.objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.objective-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.objective-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Outcome Items */
+.outcome-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.outcome-item label {
+  font-weight: 600;
+  color: #1e40af;
+  min-width: 50px;
+  padding-top: 12px;
+}
+
+.outcome-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.outcome-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Button Styles */
+.form-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #2563eb;
+}
+
+.remove-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.remove-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Articulation Matrix Table */
+.articulation-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.articulation-matrix th,
+.articulation-matrix td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+}
+
+.articulation-matrix th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+}
+
+.articulation-matrix tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.articulation-matrix tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.articulation-matrix td:first-child {
+  background-color: #eff6ff;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.articulation-matrix input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+/* Course Content Styles */
+.course-content-header {
+  margin-bottom: 20px;
+}
+
+.content-header-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content-header-table th {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  font-weight: 600;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.content-unit {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.content-unit label {
+  font-weight: 600;
+  color: #1e40af;
+  min-width: 60px;
+}
+
+.unit-title-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #eff6ff;
+}
+
+.unit-title-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.content-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.content-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.content-hours {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content-hours label {
+  font-weight: 600;
+  color: #1e40af;
+  min-width: 50px;
+}
+
+.hours-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hours-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.page-btn {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.page-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.page-btn.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.page-btn.active:hover {
+  background-color: #2563eb;
+}
+
+/* Fixed Bottom Pagination */
+.pagination-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-item {
+  display: flex;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  outline: none;
+}
+
+.page-link:hover {
+  color: #1f2937;
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+.page-link.active,
+.page-number.active {
+  color: white;
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+}
+
+.page-link:disabled {
+  color: #d1d5db;
+  background-color: #f9fafb;
+  border-color: #e5e7eb;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.page-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.page-number {
+  font-weight: 600;
+}
+
+/* Page sections for smooth scrolling */
+.section {
+  scroll-margin-top: 20px;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  /* Add space for fixed pagination */
+}
+
+.section:first-of-type {
+  padding-top: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pagination-fixed {
+    bottom: 15px;
+    padding: 6px;
+  }
+
+  .page-link {
+    min-width: 36px;
+    height: 36px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .page-arrow {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination-fixed {
+    bottom: 10px;
+    padding: 4px;
+  }
+
+  .pagination-list {
+    gap: 2px;
+  }
+
+  .page-link {
+    min-width: 32px;
+    height: 32px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .page-arrow {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 1.2rem;
+  }
+
+  .course-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .objective-item,
+  .outcome-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .course-description-table,
+  .articulation-matrix {
+    font-size: 14px;
+  }
+
+  .course-description-table td,
+  .articulation-matrix th,
+  .articulation-matrix td {
+    padding: 8px;
+  }
+
+  .content-item {
+    padding: 15px;
+  }
+
+  .content-unit {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .content-unit label {
+    min-width: auto;
+  }
+
+  .content-hours {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .content-hours label {
+    min-width: auto;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+}
+
+/* Resources Styles */
+.resource-subsection {
+  margin-bottom: 25px;
+}
+
+.resource-subsection h4 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 4px solid #3b82f6;
+}
+
+.resource-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.resource-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 50px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.resource-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Pedagogy Styles */
+.pedagogy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.pedagogy-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 40px;
+  font-family: inherit;
+}
+
+.pedagogy-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Skill Set Identification Matrix Styles */
+.skill-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.skill-matrix th,
+.skill-matrix td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  vertical-align: middle;
+}
+
+.skill-matrix th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+}
+
+.skill-matrix tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.skill-matrix tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.skill-matrix td:first-child {
+  background-color: #eff6ff;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.bloom-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.bloom-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.bloom-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 40px;
+  font-family: inherit;
+}
+
+.bloom-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.skill-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.skill-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.assessment-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 40px;
+  font-family: inherit;
+}
+
+.assessment-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+
+  .resource-item,
+  .pedagogy-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .skill-matrix {
+    font-size: 12px;
+  }
+
+  .skill-matrix th,
+  .skill-matrix td {
+    padding: 6px;
+  }
+
+  .bloom-select,
+  .skill-input,
+  .assessment-input {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+/* 9. Course Assessment Plan Styles */
+.assessment-subsection {
+  margin-bottom: 30px;
+}
+
+.assessment-subsection h4 {
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.assessment-weightage-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-weightage-table th,
+.assessment-weightage-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.assessment-weightage-table th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+}
+
+.marks-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.marks-input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+}
+
+/* Question Paper Pattern Styles */
+.question-pattern-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pattern-item {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.pattern-item h5 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.pattern-details {
+  margin-bottom: 15px;
+}
+
+.pattern-details p {
+  margin-bottom: 8px;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.pattern-input {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.pattern-input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+}
+
+/* Question Paper Blue Print Table */
+.blueprint-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.blueprint-table th,
+.blueprint-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.blueprint-table th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.blueprint-input {
+  width: 40px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+  min-width: 30px;
+  margin: 1px;
+}
+
+.blueprint-input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+}
+
+/* Special styling for the taxonomy row */
+.taxonomy-row {
+  background-color: #f8fafc;
+  font-weight: bold;
+}
+
+.taxonomy-row td {
+  border-top: 2px solid #1e3a8a;
+}
+
+/* Input styling for sections with | separator */
+.blueprint-table td {
+  white-space: nowrap;
+}
+
+.blueprint-table td input[type="text"]:not(.blueprint-input) {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for assessment plan */
+@media (max-width: 768px) {
+
+  .assessment-weightage-table,
+  .blueprint-table {
+    font-size: 0.8rem;
+  }
+
+  .marks-input,
+  .blueprint-input {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  .pattern-item {
+    padding: 15px;
+  }
+
+  .pattern-details p {
+    font-size: 0.85rem;
+  }
+}
+
+/* d. Mapping COs using Rubrics Table */
+.rubrics-mapping-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+}
+
+.rubrics-mapping-table th,
+.rubrics-mapping-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rubrics-mapping-table th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.rubrics-mapping-table td:first-child {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.rubrics-mapping-table input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.rubrics-mapping-table input[type="checkbox"]:checked {
+  accent-color: #1e3a8a;
+}
+
+/* Responsive adjustments for rubrics table */
+@media (max-width: 768px) {
+  .rubrics-mapping-table {
+    font-size: 0.7rem;
+  }
+
+  .rubrics-mapping-table th,
+  .rubrics-mapping-table td {
+    padding: 4px;
+  }
+
+  .rubrics-mapping-table input[type="checkbox"] {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .rubrics-mapping-table {
+    font-size: 0.6rem;
+  }
+
+  .rubrics-mapping-table th,
+  .rubrics-mapping-table td {
+    padding: 2px;
+  }
+}
+
+/* e. Mapping FA Components using Rubrics Table */
+.fa-components-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.fa-components-table th,
+.fa-components-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fa-components-table th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.fa-components-table td:first-child {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.fa-components-table input[type="checkbox"] {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.fa-components-table input[type="checkbox"]:checked {
+  accent-color: #1e3a8a;
+}
+
+/* Approval Table */
+.approval-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.approval-table th,
+.approval-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: top;
+}
+
+.approval-table th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  font-size: 0.85rem;
+}
+
+.signature-cell {
+  height: 120px;
+  padding: 15px;
+  position: relative;
+}
+
+.signature-space {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.signature-name {
+  text-align: center;
+}
+
+.name-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f8fafc;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+}
+
+/* Responsive adjustments for new tables */
+@media (max-width: 768px) {
+
+  .fa-components-table,
+  .approval-table {
+    font-size: 0.8rem;
+  }
+
+  .fa-components-table th,
+  .fa-components-table td,
+  .approval-table th {
+    padding: 8px;
+  }
+
+  .signature-cell {
+    height: 100px;
+    padding: 10px;
+  }
+
+  .signature-space {
+    height: 60px;
+  }
+
+  .name-input {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .fa-components-table,
+  .approval-table {
+    font-size: 0.7rem;
+  }
+
+  .fa-components-table th,
+  .fa-components-table td,
+  .approval-table th {
+    padding: 6px;
+  }
+
+  .signature-cell {
+    height: 80px;
+    padding: 8px;
+  }
+
+  .signature-space {
+    height: 40px;
+  }
+}
+
+/* Print Styles */
+@media print {
+
+  .remove-btn,
+  .add-btn {
+    display: none;
+  }
+
+  .section {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Scroll Down Button */
+.scroll-down-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+  z-index: 999;
+  border: none;
+}
+
+.scroll-down-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.scroll-down-btn:active {
+  transform: translateY(0);
+}
+
+.scroll-down-btn svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Responsive adjustments for scroll button */
+@media (max-width: 768px) {
+  .scroll-down-btn {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .scroll-down-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-down-btn {
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .scroll-down-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
